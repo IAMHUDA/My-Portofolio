@@ -1,0 +1,107 @@
+
+
+.about-container {
+    width: 80%; /* Lebar komponen 80% dari layar */
+    margin: 50px auto; 
+    margin-bottom: 50px;/* Posisikan komponen di tengah */
+    padding: 20px; /* Tambahkan padding untuk ruang di sekitar konten */
+    border: 1px solid #ccc; /* Contoh border untuk card */
+    border-radius: 10px; /* Contoh border-radius untuk card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Contoh shadow untuk card */
+    min-height: calc(100vh - 150px);
+    display: flex;
+    align-items: flex-start; /* Memulai item dari bagian atas */
+    justify-content: center; /* Mengatur tinggi minimum, mengurangi tinggi header dan footer dari viewport height */
+}
+
+
+.profile-section p {
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+.profile-section {
+    display: grid;
+    grid-template-columns: 1fr; /* Buat kolom untuk gambar dan detail */
+    grid-gap: 20px; /* Berikan jarak antara gambar dan detail */
+    align-items: center;  /* Default flex direction untuk desktop */
+}
+
+.profile-picture-container {
+    margin-right: 20px; /* Berikan margin kanan untuk memisahkan gambar dan teks */
+    margin-bottom: 20px; /* Berikan margin bawah untuk jarak dengan teks */
+}
+
+.profile-details {
+    text-align: left; /* Atur teks ke kiri untuk desktop */
+}
+
+.profile-picture {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+/* Styling untuk tema gelap */
+.dark-theme {
+    color: rgb(0, 0, 0);
+    background-color: var(--primary-color-dark);
+}
+
+/* Styling untuk tema terang */
+.light-theme {
+    color: rgb(255, 255, 255);
+    background-color: var(--primary-color-light);
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* <><><>< Button ><><><> */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.button-skills,
+.button-certificate {
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol putih */
+    border: none; /* Hilangkan border */
+    padding: 5px 5px; /* Padding di dalam tombol */
+    margin-right: 6px;
+    border-radius: 5px; /* Rounding border */ /* Margin antara tombol */
+    cursor: pointer; /* Ubah kursor saat mengarah ke tombol */
+    transition: background-color 0.3s ease; /* Efek transisi ketika tombol dihover */
+    font-size: 14px; /* Ukuran font */
+}
+
+.button-skills:hover,
+.button-certificate:hover {
+    background-color: #0056b3; /* Warna latar belakang saat tombol dihover */
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* <><><>< tampilan MObile ><><><> */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.lorem-section-desktop {
+    display: block;
+    margin-top:100px;
+    grid-column: 2; /* Letakkan di kolom kedua */
+    text-align: left; /* Tampilkan pada mode desktop */
+}
+
+/* Penyesuaian untuk mode mobile */
+.lorem-section-mobile {
+    display: none; /* Sembunyikan pada mode mobile */
+}
+
+/* Media query untuk mode mobile */
+@media (max-width: 600px) {
+    .lorem-section-desktop {
+        display: none; /* Sembunyikan pada mode mobile */
+    }
+
+    .lorem-section-mobile {
+        display: block;
+        margin-bottom: 10px; /* Tampilkan pada mode mobile */
+    }
+}
+

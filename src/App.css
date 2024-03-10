@@ -1,0 +1,9 @@
+
+
+
+.main {
+  background-image: url('../src/Assets/Images/dark.gif');
+  background-size: cover; /* Mengatur agar gambar latar belakang menutupi seluruh elemen */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+  background-position: center; /* Mengatur posisi gambar latar belakang */
+}

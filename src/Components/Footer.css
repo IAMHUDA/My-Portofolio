@@ -1,0 +1,15 @@
+.footer {
+    background-color: #000000; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks footer */
+    padding: 8px 0; /* Padding atas dan bawah footer */
+    text-align: center; /* Teks berada di tengah */
+    width: 100%;
+     /* Footer menempati lebar penuh */
+    position: fixed; /* Footer tetap di bagian bawah layar */
+    bottom: 0; /* Footer menempel di bagian bawah */
+}
+
+.container {
+    max-width: 1200px; /* Lebar maksimum konten footer */
+    margin: 0 auto; /* Tengahkan footer */
+}

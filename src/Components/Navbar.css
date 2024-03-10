@@ -1,0 +1,76 @@
+
+.navbar {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    box-shadow: 0 10px 10px rgba(162, 255, 118, 0.895); /* Shadow bawah navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+
+/* Gaya tombol toggle tema */
+/* Navbar.css */
+.toggle-theme {
+    cursor: pointer;
+    width: 40px; /* Lebar tombol toggle */
+    height: 40px; /* Tinggi tombol toggle */
+    border-radius: 50%; /* Membuat tombol toggle berbentuk lingkaran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3); /* Warna latar belakang toggle */
+    transition: transform 0.5s ease; /* Transisi untuk efek rotasi */
+}
+
+.rotate {
+    transform: rotate(360deg); /* Rotasi 360 derajat saat tombol ditekan */
+}
+
+
+/* Stil ketika tombol toggle dalam keadaan gelap */
+.dark-theme .toggle-theme {
+    background-color: rgb(255, 168, 130); /* Warna latar belakang toggle saat dalam tema gelap */
+}
+
+/* Stil ketika tombol toggle dalam keadaan terang */
+.light-theme .toggle-theme {
+    background-color: rgba(0, 0, 0, 0.3); /* Warna latar belakang toggle saat dalam tema terang */
+}
+
+/* Stil ikon dalam tombol toggle */
+.toggle-theme i {
+    color: var(--secondary-color);
+}
+
+.navbar-brand a {
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(90deg, #ff0000, #ffff00, #00ff00); /* Warna lampu yang menyala */
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 2s linear infinite;
+    font-family: "Madimi One", sans-serif; /* Animasi untuk mengubah warna */
+
+    /* Style lainnya sesuai kebutuhan */
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+
+:root {
+    --primary-color-light: #000000; 
+    --primary-color-dark: #aaaaaa; 
+  }
+
+
+
